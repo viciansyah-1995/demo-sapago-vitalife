@@ -22,3 +22,4 @@ body.sapago-livechat-attention>iframe[title="Sapago Live Chat"]{animation:sapago
 .inbox-chat .chat-messages{padding-bottom:150px}
 .inbox-chat .quick-replies{position:absolute;left:0;right:0;bottom:82px;z-index:2}
 .inbox-chat .chat-input-form{position:absolute;left:0;right:0;bottom:0;z-index:3;background:#fff}
+@media(min-width:761px){.inbox-chat .chat-input-form{position:fixed;left:28%;right:18%;bottom:0;z-index:60;border:1px solid #e4e9e1;box-shadow:0 -4px 18px #243e3012}}
