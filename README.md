@@ -25,13 +25,11 @@ Pada mobile, pilih customer dari daftar dan gunakan panah kembali di header chat
 
 Semua nama produk, harga, stok, kemasan, manfaat konseptual dan status pesanan adalah contoh fiktif; bukan data resmi Vitalife. Dosis/kandungan/keamanan tidak direka-reka. Ilustrasi kemasan dibuat menggunakan image generation untuk prototype ini.
 
-## Memasang SapaGo Widget
+## SapaGo Widget
 
-Ubah `SAPAGO_WIDGET_URL` dalam `lib/demo/widget-config.ts` dari `SAPAGO_WIDGET_EMBED_URL` menjadi URL HTTPS iframe resmi SapaGo. Alternatif: isi `SAPAGO_CHANNEL_URLS` dengan URL per channel. Jangan menyimpan API key atau rahasia di konfigurasi client.
+Tab Website memuat widget live chat resmi melalui `components/demo/sapago-livechat.tsx`, menggunakan public key dan endpoint yang diberikan untuk demo ini. Widget hanya terlihat saat tab Website aktif dan sesi visitor dipertahankan oleh loader SapaGo.
 
-`SapaGoWidget` dalam `components/demo/chat.tsx` adalah boundary pengganti. URL valid menampilkan iframe; placeholder atau URL non-HTTPS menampilkan simulator. Tombol fallback memungkinkan kembali ke simulasi bila widget tidak dapat dimuat. Untuk script embed, ganti cabang iframe pada komponen ini sesuai dokumentasi SapaGo tanpa mengubah layout storefront/inbox.
-
-Widget asli belum diuji: URL belum disediakan. Session identity, customer/channel mapping dan postMessage harus mengikuti kontrak resmi vendor; simulator tidak mengasumsikan parameter integrasi. Browser/vendor dapat membatasi iframe melalui CSP atau X-Frame-Options.
+TikTok Shop, Shopee, dan Instagram tetap memakai simulator percakapan yang reusable dari `components/demo/chat.tsx`. Konfigurasi iframe placeholder di `lib/demo/widget-config.ts` masih tersedia bila masing-masing channel nantinya memiliki URL embed tersendiri.
 
 ## Verifikasi
 
