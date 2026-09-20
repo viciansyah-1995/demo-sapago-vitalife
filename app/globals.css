@@ -29,4 +29,5 @@ body.sapago-livechat-attention>iframe[title="Sapago Live Chat"]{animation:sapago
 .inbox-layout,.inbox-chat{min-height:0}
 .inbox-chat .chat-window{overflow:hidden}
 .inbox-chat .chat-messages{position:static;flex:1;height:0;min-height:0;padding-bottom:18px;overflow-y:auto}
-.inbox-chat .quick-replies,.inbox-chat .chat-input-form{position:static!important;left:auto;right:auto;bottom:auto;display:block!important;visibility:visible!important;opacity:1!important;width:auto;flex-shrink:0;z-index:auto!important}
+.inbox-chat .quick-replies{position:static!important;left:auto;right:auto;bottom:auto;display:flex!important;visibility:visible!important;opacity:1!important;width:auto;flex-shrink:0;z-index:auto!important}
+.inbox-chat .chat-input-form{position:static!important;left:auto;right:auto;bottom:auto;display:block!important;visibility:visible!important;opacity:1!important;width:auto;flex-shrink:0;z-index:auto!important}
