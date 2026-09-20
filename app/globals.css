@@ -23,3 +23,8 @@ body.sapago-livechat-attention>iframe[title="Sapago Live Chat"]{animation:sapago
 .inbox-chat .quick-replies{position:absolute;left:0;right:0;bottom:82px;z-index:2}
 .inbox-chat .chat-input-form{position:absolute;left:0;right:0;bottom:0;z-index:3;background:#fff}
 @media(min-width:761px){.inbox-chat .chat-input-form{position:fixed!important;display:block!important;visibility:visible!important;opacity:1!important;left:22.2%;right:18.9%;bottom:64px!important;z-index:9999!important;min-height:78px;padding:10px 22px 13px!important;border:1px solid #e4e9e1;box-shadow:0 -4px 18px #243e3012;background:#fff!important}}
+
+/* The composer belongs to the chat panel; keep it in the panel's flex flow. */
+.inbox-chat .chat-window{height:100%;min-height:0}
+.inbox-chat .chat-messages{position:static;flex:1;min-height:0;padding-bottom:18px;overflow-y:auto}
+.inbox-chat .quick-replies,.inbox-chat .chat-input-form{position:static!important;left:auto;right:auto;bottom:auto;display:block!important;visibility:visible!important;opacity:1!important;width:auto;flex-shrink:0;z-index:auto!important}
