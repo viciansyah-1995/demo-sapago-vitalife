@@ -34,3 +34,8 @@ body.sapago-livechat-attention>iframe[title="Sapago Live Chat"]{animation:sapago
 .inbox-chat .quick-replies{flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important;align-content:flex-start!important}
 .inbox-chat .quick-replies button{flex:0 0 auto!important;width:auto!important}
 .inbox-chat .chat-input-form{position:static!important;left:auto;right:auto;bottom:auto;display:block!important;visibility:visible!important;opacity:1!important;width:auto;z-index:4!important;background:#fff}
+
+/* Constrain every inbox column to the declared panel height. */
+.inbox-layout{grid-template-rows:minmax(0,1fr);overflow:hidden}
+.conversation-list,.inbox-chat,.customer-panel{min-height:0;max-height:100%}
+.conversation-list,.customer-panel{overflow-y:auto}
